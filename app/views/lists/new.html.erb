@@ -1,0 +1,20 @@
+<div class="login">
+  <div class="container">
+    <div class="form">
+
+    <h1>Sign up</h1>
+
+    <%= form_for @list do |l| %>
+
+      <div class="form-group">
+        <%= l.label :title %>
+        <%= l.text_field :title, class: 'form-control' %>
+      </div>
+
+      <%= l.submit 'Upload', class: 'btn btn-primary' %>
+
+      <% end %>
+  
+    </div>
+  </div>
+</div>

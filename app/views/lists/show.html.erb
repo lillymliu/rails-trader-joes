@@ -1,0 +1,12 @@
+<h1> <%= @list.title %></h1>
+
+<p><%= link_to 'Upload new photo', new_list_photo_path(@list) %></p>
+
+<% @list.photo.each do |photo| %>
+  <div class="white">
+      <h3><%= photo.title %></h3>
+      <br>
+      <%= image_tag photo.image.url %>
+  </div>    
+
+<% end %>

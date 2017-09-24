@@ -1,0 +1,15 @@
+<div class="header">
+  <div class="container">
+    <h1>Lists </h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="white">
+  	<%= @lists.each do |l| %>
+      <%= link_to list_path(l) do %>
+      <h3> <%= l.title %></h3>
+      <%end%>
+    <% end %>
+  </div>
+</div>
