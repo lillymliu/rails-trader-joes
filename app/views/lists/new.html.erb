@@ -2,7 +2,7 @@
   <div class="container">
     <div class="form">
 
-    <h1>Sign up</h1>
+    <h1>Make a list</h1>
 
     <%= form_for @list do |l| %>
 
@@ -11,7 +11,7 @@
         <%= l.text_field :title, class: 'form-control' %>
       </div>
 
-      <%= l.submit 'Upload', class: 'btn btn-primary' %>
+      <%= l.submit 'Make List!', class: 'btn btn-primary' %>
 
       <% end %>
   

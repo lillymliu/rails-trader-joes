@@ -19,6 +19,6 @@ Rails.application.routes.draw do
 
 	get '/list/:id', to: 'lists#show'
 
-	get '/newlist', to: 'lists#new'
+	get '/list/new', to: 'lists#new'
 
 end
